@@ -1,7 +1,9 @@
 #include <log4cpp/Portability.hh>
 #include "Localtime.hh"
 #include <time.h>
+#ifndef LOG4CPP_HAVE_LOCALTIME_R
 #include <memory.h>
+#endif
 
 namespace log4cpp         
 {
