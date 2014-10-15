@@ -24,6 +24,9 @@
 
 #ifdef WIN32
 #include <winsock2.h>
+#elif defined(__VXWORKS__)
+#include <hostLib.h>
+#include <arpa/inet.h>
 #else
 #include <netdb.h>
 #include <sys/socket.h>
