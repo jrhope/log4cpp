@@ -43,4 +43,7 @@
 /* define if you use pthreads */
 #cmakedefine LOG4CPP_USE_PTHREADS
 
+/* define if a system header defines a macro called ERROR */
+#cmakedefine LOG4CPP_FIX_ERROR_COLLISION
+
 #endif

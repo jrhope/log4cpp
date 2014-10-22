@@ -176,6 +176,14 @@ IF (CMAKE_THREAD_LIBS_INIT)
 
 ENDIF (CMAKE_THREAD_LIBS_INIT)
 
+###########################################################
+# LOG4CPP_FIX_ERROR_COLLISION
+###########################################################
+if (VXWORKS)
+  # vxWorks.h defines ERROR
+  set(LOG4CPP_FIX_ERROR_COLLISION TRUE)
+endif (VXWORKS)
+
 # TODO
 #LOG4CPP_HAVE_BOOST
 #LOG4CPP_HAVE_DLFCN_H 
